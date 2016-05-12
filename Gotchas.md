@@ -10,3 +10,4 @@
    ggplot(...)
    dev.off()
    
+3. Misc.
