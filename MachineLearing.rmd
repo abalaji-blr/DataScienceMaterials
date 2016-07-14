@@ -1,0 +1,6 @@
+
+## Machine Learning Materials
+
+  * Resources
+     + [Top Machine Learning MOOCs](http://www.kdnuggets.com/2016/07/top-machine-learning-moocs-online-lectures.html)
+     + [Machine Learning Mastery](http://machinelearningmastery.com/)
