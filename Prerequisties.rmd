@@ -1,0 +1,13 @@
+
+## Pre-requisites
+
+  *  Maths
+      + Linear Algebra
+      + Matrices
+      + Probability & Statistics
+      
+  * Computer Science
+     + [Interactive SQL Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial)
+     + [SQL Tutorial](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/)
+        
+     
