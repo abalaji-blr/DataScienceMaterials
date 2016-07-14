@@ -17,5 +17,12 @@
    + [R-Bloggers - R news and tutorials contributed by 500+ R bloggers](http://www.r-bloggers.com/)
    + [Visualization](www.flowingdata.com)
  
-
+  * People to follow
+    + [Nate Silver](https://twitter.com/NateSilver538)
+    + [Hillary Mason](https://twitter.com/hmason)
+    + [DJ Patil](https://twitter.com/dpatil)
+    + [David Smith](https://twitter.com/revodavid)
+    + [Kevin Markam](https://github.com/justmarkham/DAT3/blob/master/resources.md)
+    
+    
  
