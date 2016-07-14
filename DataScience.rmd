@@ -1,9 +1,10 @@
 
 ## Data Science Materials
 
- * **[Online MOOCs](http://www.quora.com/What-are-the-best-data-science-MOOCs/answer/Thia-Kai-Xin)**
- * **[Data science central](http://www.datasciencecentral.com/profiles/blogs/huge-trello-list-of-great-data-science-resources)**
- * **[Trello Data Science Dashboard](https://trello.com/b/rbpEfMld/data-science)**
+ * Resources
+   + **[Online MOOCs](http://www.quora.com/What-are-the-best-data-science-MOOCs/answer/Thia-Kai-Xin)**
+   + **[Data science central](http://www.datasciencecentral.com/profiles/blogs/huge-trello-list-of-great-data-science-resources)**
+   + **[Trello Data Science Dashboard](https://trello.com/b/rbpEfMld/data-science)**
  
  
  * Blogs
