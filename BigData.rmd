@@ -1,0 +1,5 @@
+## Big Data
+
+  * Resources
+     + [MapReduce](https://en.wikipedia.org/wiki/MapReduce)
+     + [Spark](https://en.wikipedia.org/wiki/Apache_Spark)

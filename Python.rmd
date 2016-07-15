@@ -1,0 +1,9 @@
+## Python Materials
+
+  * Resources
+     + [Python Tutorial](https://docs.python.org/3/tutorial/)
+     + [Numpy : Numeric python (arrays)](http://www.numpy.org/)
+     + Matplotlib : For plotting
+     + Pandas : Dataframe support
+        + [Pandas in 10 min for new users](http://pandas.pydata.org/pandas-docs/stable/10min.html#min)
+        + [Pandas cookbook / tutorial](http://pandas.pydata.org/pandas-docs/stable/tutorials.html)

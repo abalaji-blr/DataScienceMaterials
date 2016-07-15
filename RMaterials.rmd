@@ -1,0 +1,6 @@
+ 
+ ## R Materials
+ 
+ * Resources
+    + [R Tutorial](http://www.r-tutor.com/r-introduction)
+    
