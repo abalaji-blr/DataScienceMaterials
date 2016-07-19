@@ -173,7 +173,10 @@ ggplot(pressure, aes(x=temperature, y=pressure)) + geom_line() + geom_point()
 
 ## Additional Resources
    1. [Advanced R ](http://adv-r.had.co.nz/)
-   2. [Computer World](http://www.computerworld.com/article/2497464/business-intelligence/business-intelligence-60-r-resources-to-improve-your-data-skills.html)
+   
+   2. [Beautifyl Plotting using R ](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
+   
+   3. [Computer World](http://www.computerworld.com/article/2497464/business-intelligence/business-intelligence-60-r-resources-to-improve-your-data-skills.html)
    
    
    
