@@ -1,0 +1,177 @@
+---
+title: "R Gotchas"
+author: "Anandan Balaji"
+output: 
+  html_document:
+    toc: yes
+    number_sections: 2
+---
+
+#Gotchas related to R
+
+## How to run RScript in the iinux shell?
+   RScript script-name
+   
+## How to save the plots to the disk?
+   Follow the below code snippet.
+   
+   jpgeg(filename = "plot1.jpeg")
+   
+   ggplot(...)
+   
+   dev.off()
+   
+   or 
+   Use Export option in the RStudio.
+   
+## Language specific feature
+   * R is case sensitive
+   * The index starts with 1 
+   * Use combine syntax c() to creat list. Ex: c(2,4)
+   * For assignment, use <-   # temp <- mtcars$mpg
+   * No negative indexing. Minus means, skip that.
+     mtcars[, -1]  # all rows and skip first column
+## How to analyze the data set using R?
+
+### Reading the dataset
+
+  *  Use fread()
+```{r eval=FALSE}
+    library(data.table)
+    system(dt <- fread("./train.csv", header = TRUE))
+```
+
+  *  How to read the big dataset?
+    
+    If you are unable to read the complete dataset due to machine resource issues, restrict the training dataset to small. You can create smaller training dataset for early data analysis in the following ways
+    
+     *  Use caTools
+     
+```{r eval=FALSE}
+# for splitting the training data
+library(caTools)
+
+# data is 3GB
+# use partial info for early analysis.
+#to make it reproducible
+set.seed(123)
+
+## specify the column name
+split = sample.split(dt$Cliente_ID, SplitRatio = 0.15)
+
+new_train_dt = subset(dt, split == TRUE)
+write.csv(new_train_dt, file = "new_train.csv", row.names = FALSE, quote = FALSE)
+```
+     
+       *  Use dplyr package
+     
+```{r eval=FALSE}
+system(dt <- fread("./train.csv", header = TRUE))
+
+library("dplyr")
+new_train <- sample_frac(dt, 0.15) # get only the 15 percent of the training set
+write.csv(new_train, file = "new_train.csv", row.names = FALSE, quote = FALSE)
+
+system(dt <- fread("./new_train.csv", header = TRUE))
+```
+
+     
+### Get the structure of the dataset?
+  
+```{r eval = FALSE}
+str(dt)  # prints the structure of the dataset
+rownames(dt)
+colnames(dt)
+```
+
+### Basic stats
+
+```{r eval=FALSE}
+summary(dt)   # prints mean, median etc
+cor(dt)       # prints the correlation info in the matrix for the dataframe
+cor(dt$dependent_var, dt$independent_var) # correaltion between two specific variables
+mean(vector, na.rm = TRUE)  # to remove NA values.
+```
+
+### Get slices or subset of data
+
+#### Use $ : dollar symbol
+```{r eval=FALSE}
+df$column-name  # use $ field name to get the column entrie (mtcars$mpg)
+mtcars$mpg > 30  # returns a vector of booleans.
+```
+
+#### Use [ : square brackets.
+
+This returns the same class of object.
+
+```{r eval=FALSE}
+mtcars[mtcars$mpg > 30]  # return the rows which meets the condition
+mtcars[, c(2,4)]  # returns column 2 & 4 for all rows
+mtcars[mtcars$mpg>30, c(2,3)] # the rows which meets the condition and return only col 2 & 3
+```
+
+#### Use [[  : double square brackets
+
+```{r}
+xyz <- list("a", "b", "c", "x", "y")
+
+xyz[3] # this will return the list
+xyz[[3]]  # this will return the string "c"
+
+```
+
+## Ploting
+```{r}
+#install.packages(ggplot2)
+library(ggplot2)
+```
+
+### Vector of colors
+
+```{r eval=FALSE}
+rainbow(n)
+
+heat.colors(n)
+
+terrain.colors(n)
+
+topo.colors(n)
+
+cm.colors(n)
+```
+### Single variable - Bar plot, histogram
+
+```{r}
+#ggplot(mtcars, aes(factor(cyl))) + geom_bar()
+
+mycolors <- heat.colors(3)
+ggplot(mtcars, aes(x=factor(cyl))) + geom_bar(fill=mycolors)
+
+#
+#ggplot(mydata, aes(x=columnName)) + geom_histogram(binwidth=n)
+
+```
+
+
+   
+### Two variables - Scatter plot, line plot
+
+```{r}
+
+ggplot(mtcars, aes(x=disp, y=mpg)) + geom_point()
+```
+
+### Line plot
+```{r}
+ggplot(pressure, aes(x=temperature, y=pressure)) + geom_line() + geom_point()
+
+```
+
+## Apply function
+?help
+
+## Advanced R
+   [Advanced R ](http://adv-r.had.co.nz/)
+   
+   
