@@ -2,9 +2,11 @@
 ## Pre-requisites
 
   *  Maths
+      + [Reltionship between Logarithms & Exponents](http://www.purplemath.com/modules/logs.htm)
       + Linear Algebra
       + Matrices
       + Probability & Statistics
+        + [Statistics explained with pictures](http://www.mathsisfun.com/data/index.html)
       
   * Computer Science
      + [Interactive SQL Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial)
