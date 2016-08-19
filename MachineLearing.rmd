@@ -6,17 +6,19 @@
      + [Machine Learning Mastery](http://machinelearningmastery.com/)
      
      
-     * Supervised Learning
+     * Supervised Learning : SVM
         + [SVM](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM)
         + [SVM with pictures](https://www.reddit.com/r/MachineLearning/comments/15zrpp/please_explain_support_vector_machines_svm_like_i)
         + [SVM Kernel - Video](https://youtu.be/3liCbRZPrZA)
         + [Video lecture - Bristol University](http://videolectures.net/epsrcws08_campbell_isvm/)
+        
         
     * Supervised Learning - Boosted Trees:
        +  [Boosted Trees - Slides](http://homes.cs.washington.edu/~tqchen/pdf/BoostedTree.pdf)
        +  [L2 norm / L1 norm](http://www.chioka.in/differences-between-the-l1-norm-and-the-l2-norm-least-absolute-deviations-and-least-squares/)
        + [What is a norm in mathematics?](https://www.youtube.com/watch?v=pgJ2Sg1jcYQ)
        + [Xgboost source code](https://github.com/tqchen/xgboost)
+       + [XGBoost intro using R](https://www.r-bloggers.com/an-introduction-to-xgboost-r-package/)
        + Xgboost Installation - Get the latest changes from below
 ```{r, eval=FALSE}
 install.packages("drat", repos="https://cran.rstudio.com")
@@ -29,3 +31,4 @@ install.packages("xgboost", repos="http://dmlc.ml/drat/", type = "source")
         
   * Blog
     + [Reddit](https://www.reddit.com/r/MachineLearning)
+    + [WildML](http://www.wildml.com/)
