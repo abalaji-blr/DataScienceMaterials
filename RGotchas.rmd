@@ -82,6 +82,57 @@ system(dt <- fread("./new_train.csv", header = TRUE))
 str(dt)  # prints the structure of the dataset
 rownames(dt)
 colnames(dt)
+
+# add new field
+dt$newColumn <- dt$col1 + dt$col2
+
+# add new field - use transform
+dt <- trainsform(dt, newCol = col1 + col2)
+```
+
+### Apply functions
+
+```{r, eval=FALSE}
+# apply a function on a data, row wise or column wise
+# syntax (data, row / column wise, function)
+
+```
+
+### dplyr functions
+
+#### Order
+
+```{r, eval=FALSR}
+
+# sort based on column margin - this gives the result of the column in the sorted order
+companyOrder <- order(companiesData$margin)
+
+# to get the all rows in the sorted order, feed the result from the earlier
+companiesOrdered <- companiesData[companyOrder,]
+
+or
+
+# you can do in one line - less readable though
+companiesOrdered <- companiesData[order(companiesData$margin),]
+
+# instead of all columns, get me only the few selected cols
+companiesOrdered <- companiesData[order(companiesData$margin),c("fy", "company")]
+
+# sort in descending order
+companyOrder <- order(-companiesData$margin)
+
+# order based on multiple columns - first one ascedning and second one descending
+companiesData[order(companiesData$fy, -companiesData$margin),]
+
+
+```
+
+
+#### arrange
+
+```{r, eval=FALSE}
+#sort by column name
+arrange(dataFrameName, columnName, secondColumnName)
 ```
 
 ### Basic stats
@@ -121,7 +172,7 @@ xyz[[3]]  # this will return the string "c"
 
 ```
 
-## Ploting
+# Ploting
 ```{r}
 #install.packages(ggplot2)
 library(ggplot2)
@@ -140,6 +191,34 @@ topo.colors(n)
 
 cm.colors(n)
 ```
+
+### Correlation / Pairwise plot
+
+```{r, eval=FALSE}
+library(corrplot)
+
+corrplot(cor(train), type = "upper")
+
+# quick pairwise plot
+# scatter plot in matrix format
+# just use only 1000 examples and plot only columns 7 thru 11.
+pairs(as.data.frame(train)[1:1000, c(7:11)])
+
+```
+
+### Venn Diagram
+
+```{r, eval = FALSE}
+library(VennDiagram)
+grid.newpage()
+
+training_prod <- unique(train$Producto_ID)
+test_prod <- unique(test_dt$Producto_ID)
+common_prod <- intersect(training_prod, test_prod)
+
+draw.pairwise.venn(length(training_prod), length(test_prod), length(common_prod), category = c("Traning Products", "Test Products") )
+```
+
 ### Single variable - Bar plot, histogram
 
 ```{r}
@@ -168,10 +247,10 @@ ggplot(pressure, aes(x=temperature, y=pressure)) + geom_line() + geom_point()
 
 ```
 
-## Apply function
+# Apply function
 ?help
 
-## Additional Resources
+# Additional Resources
    1. [Advanced R ](http://adv-r.had.co.nz/)
    
    2. [Beautifyl Plotting using R ](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)

@@ -3,7 +3,19 @@
 
   *  Maths
       + [Reltionship between Logarithms & Exponents](http://www.purplemath.com/modules/logs.htm)
-      + Linear Algebra
+      
+  * Calculus - is about **Limits**. Limits allow us to see how things **change**. A branch of calculus deals with the "curves & slopes" is called **Differential Calculs*. The slopes are nothing but tangent lines at a point. These slopes are called **derivaties** or **gradient**. 
+  The other branch of Calculus deals with "areas (or volumes)" is called "integrals". For example, find out the area under the curve? etc.
+  
+     + [Calculus- What is it?](https://www.youtube.com/watch?v=INFoNeC1eBA)
+     + [Differentiation / Derivaties / Gradient ](https://www.youtube.com/watch?v=Dq3vqarm-VQ)
+      
+      + Geometry : Deals with Shapes ( circumference, area etc)
+      
+      + Trignometry : Deals with triangles (interior angles, hypotenuse)
+      
+      + Linear Algebra : Deals with equations
+      
       + Matrices
       + Probability & Statistics
         + [Statistics explained with pictures](http://www.mathsisfun.com/data/index.html)
