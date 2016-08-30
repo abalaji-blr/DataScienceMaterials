@@ -1,0 +1,4 @@
+## Web Scrape
+
+  * [XML intro](http://www.stat.berkeley.edu/~statcur/Workshop2/Presentations/XML.pdf)
+  

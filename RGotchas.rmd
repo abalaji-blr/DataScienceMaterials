@@ -257,5 +257,9 @@ ggplot(pressure, aes(x=temperature, y=pressure)) + geom_line() + geom_point()
    
    3. [Computer World](http://www.computerworld.com/article/2497464/business-intelligence/business-intelligence-60-r-resources-to-improve-your-data-skills.html)
    
+   4. [Time series video ](https://www.youtube.com/watch?v=QHsmAM6nktY&index=5&list=PLCj1LhGni3hOA2q0sfDNKBH9WIlLxXkbn#t=28.418673)
+   
+   5. [Rutgers Edu](http://libguides.rugters.edu/data_R)
+   
    
    

@@ -13,6 +13,7 @@
         + [Video lecture - Bristol University](http://videolectures.net/epsrcws08_campbell_isvm/)
         
         
+        
     * Supervised Learning - Boosted Trees:
        +  [Boosted Trees - Slides](http://homes.cs.washington.edu/~tqchen/pdf/BoostedTree.pdf)
        +  [L2 norm / L1 norm](http://www.chioka.in/differences-between-the-l1-norm-and-the-l2-norm-least-absolute-deviations-and-least-squares/)
@@ -27,8 +28,12 @@ install.packages("xgboost", repos="http://dmlc.ml/drat/", type = "source")
 ```
 
   * Neural Networks
+    + [Types of Neural Network](http://colah.github.io/posts/2015-09-NN-Types-FP/)
     + [Backpropagation](http://colah.github.io/posts/2015-08-Backprop/)
         
+  * Time Series 
+    + [Video](https://www.youtube.com/watch?v=QHsmAM6nktY&index=5&list=PLCj1LhGni3hOA2q0sfDNKBH9WIlLxXkbn#t=28.418673)
+    + [Time Series with R](https://www.researchgate.net/profile/Andrew_Metcalfe6)
   * Blog
     + [Reddit](https://www.reddit.com/r/MachineLearning)
     + [WildML](http://www.wildml.com/)
