@@ -34,6 +34,15 @@ install.packages("xgboost", repos="http://dmlc.ml/drat/", type = "source")
   * Time Series 
     + [Video](https://www.youtube.com/watch?v=QHsmAM6nktY&index=5&list=PLCj1LhGni3hOA2q0sfDNKBH9WIlLxXkbn#t=28.418673)
     + [Time Series with R](https://www.researchgate.net/profile/Andrew_Metcalfe6)
+    
+    
   * Blog
     + [Reddit](https://www.reddit.com/r/MachineLearning)
     + [WildML](http://www.wildml.com/)
+    
+  * References
+    + Andrew Ng - Coursera course 
+    + [Awesome Machine Learning resources](https://github.com/josephmisiti/awesome-machine-learning)
+    
+    
+    
