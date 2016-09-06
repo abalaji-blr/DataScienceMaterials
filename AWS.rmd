@@ -1,0 +1,25 @@
+ 
+## Amazon Web Services (AWS)
+
+### How to get the shell for the Amazon EC2 instance?
+
+% ssh -i ~/Downloads/key.pem <name-of_EC2-Instance>
+
+### How to setup Amazon EC2 for R?
+
+Visit www.louisaslett.com for the instructions.
+
+### How to create a mount point?
+
+```{r, eval = FALSE}
+
+# create the mount point
+%sudo mkdir mount_point_name 
+
+ex: sudo mkdir /data
+
+# mount it
+%sudo mount /dev/xvdf /data
+```
+
+
