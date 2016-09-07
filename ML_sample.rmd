@@ -1,0 +1,38 @@
+
+# Machine Learning - Sample R code
+
+## Logistic Regression
+
+```{r , eval=FALSE}
+
+# model
+library(stats)
+model <- glm(Response ~., family = binomial(link = "logit"), data = train)
+summary(model)
+
+# prediction
+pred <- predict(model, newdata = test, type = "response")
+
+pred <- ifelse(pred > 0.5, 1, 0)
+
+# calculate the MCC (Mathews Corrleation Coefficient)
+
+compute_mcc <- function(actual, pred) {
+   # calculate the confusion matrix terms
+   TP <- sum(actual == 1 & pred == 1)
+   TN <- sum(actual == 0 & pred == 0)
+   FN <- sum(actual == 1 & pred == 0)
+   FP <- sum(actual == 0 & pred == 1)
+   
+   print("TP ", TP)
+   numer <- (TP*TN) - (FP*FN)
+   denom <- sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+TN))
+   mcc <- numer/denom
+}
+
+mcc_score <- compute_mcc(train$Response, pred)
+mcc_score
+```
+
+## XGBoost
+
