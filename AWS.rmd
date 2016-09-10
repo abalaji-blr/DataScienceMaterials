@@ -9,6 +9,16 @@
 
 Visit www.louisaslett.com for the instructions.
 
+### How to create a new file system (new entry under /dev)?
+
+```{r, eval=FALSE}
+#list the blocks
+lsblk
+
+#create new file system
+sudo mkfs -t ext4 /dev/xvdf
+```
+
 ### How to create a mount point?
 
 ```{r, eval = FALSE}
@@ -23,3 +33,37 @@ ex: sudo mkdir /data
 ```
 
 
+### How to download the dataset directly to the EC2 instance from kaggle?
+
+%wget -x -c --load-cookies /home/rstudio/cookies.txt http://www.kaggle.com/c/grupo-bimbo-inventory-demand/download/test.csv.zip
+
+### How to get the secured shell?
+
+```{r, eval=FALSE}
+ssh -i ~/Downloads/aws.pem login@DNS
+
+Ex:
+ssh -i ~/Downloads/aws.pem ubuntu@ec2-blah-blah.compute.amazonaws.com
+
+```
+
+### How to see the session through broswer?
+
+```{r, eval=FALSE}
+#In the browser type in the DNS.
+Ex: ec2-blah-blah.compute.amazonaws.com
+
+Based on the AMI (amazon image) & login credentials, get into the session.
+ex: for id/passwd: rstudio / rstudio.
+```
+
+### How to copy the files from desktop to remote machine?
+
+```{r, eval=FALSE}
+#use secured copy
+
+# similar to ssh
+scp -i ~/Downloads/aws.pem file.csv login@machine:destination-location
+
+Ex: scp -i ~/Downloads/aws.pem file.csv ubuntu@ec2-blah-blah-DNS:/home/rstudio/mydata
+```

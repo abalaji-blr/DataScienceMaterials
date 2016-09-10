@@ -19,6 +19,7 @@
        +  [L2 norm / L1 norm](http://www.chioka.in/differences-between-the-l1-norm-and-the-l2-norm-least-absolute-deviations-and-least-squares/)
        + [What is a norm in mathematics?](https://www.youtube.com/watch?v=pgJ2Sg1jcYQ)
        + [Xgboost source code](https://github.com/tqchen/xgboost)
+       + [XGBoost Tutorial in R ](https://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html)
        + [XGBoost intro using R](https://www.r-bloggers.com/an-introduction-to-xgboost-r-package/)
        + Xgboost Installation - Get the latest changes from below
 ```{r, eval=FALSE}
