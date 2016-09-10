@@ -36,6 +36,7 @@ mcc_score
 
 ## XGBoost
 
+<<<<<<< HEAD
 ### Benefits
      * Speed: it can automatically do parallel computation on Windows and Linux, with OpenMP. It is generally over 10 times faster than the classical gbm.
      
@@ -100,3 +101,5 @@ xgb.save(xgbModel, "xgboost.model")
 model <- xgb.load("xgboost.model")
 pred2 <- predict(model, test$data)
 ```
+=======
+>>>>>>> origin/master
