@@ -40,6 +40,7 @@ install.packages("xgboost", repos="http://dmlc.ml/drat/", type = "source")
   * Blog
     + [Reddit](https://www.reddit.com/r/MachineLearning)
     + [WildML](http://www.wildml.com/)
+    + [Analytics Vidhya Blog](https://www.analyticsvidhya.com/blog)
     
   * References
     + Andrew Ng - Coursera course 
