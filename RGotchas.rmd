@@ -204,6 +204,13 @@ corrplot(cor(train), type = "upper")
 # just use only 1000 examples and plot only columns 7 thru 11.
 pairs(as.data.frame(train)[1:1000, c(7:11)])
 
+# create a set of bar plots
+
+# use melt utility from data.table => which generates the value & variable 
+# and use them to plot.
+melt_data <- melt.data.table(top_10[,-11, with=FALSE])
+ggplot(melt_data, aes(x = value)) +facet_wrap(~variable, scales = "free_x") + geom_histogram()
+
 ```
 
 ### Venn Diagram
@@ -249,6 +256,16 @@ ggplot(pressure, aes(x=temperature, y=pressure)) + geom_line() + geom_point()
 
 # Apply function
 ?help
+
+```{r eval = FALSE}
+# 1 refers to rowise 
+# 2 refers to columnwise
+#apply(array, 1/2, function)
+
+all$max_time <- apply(all[,c(date_start:date_end), with=FALSE], 1, max, na.rm = TRUE) 
+all$min_time <- apply(all[,c(date_start:date_end), with=FALSE], 1, min, na.rm = TRUE)
+
+```
 
 # Additional Resources
    1. [Advanced R ](http://adv-r.had.co.nz/)
