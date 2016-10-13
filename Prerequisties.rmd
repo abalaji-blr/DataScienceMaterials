@@ -17,9 +17,48 @@
       + Linear Algebra : Deals with equations
       
       + Matrices
-      + Probability & Statistics
-        + [Statistics explained with pictures](http://www.mathsisfun.com/data/index.html)
       
+        
+      
+  * Probablity & Statistics
+     + [Statistics explained with pictures](http://www.mathsisfun.com/data/index.html)
+     + [Online lectures](http://www.ilectureonline.com/lectures/subject/MATH/18/164/1670)
+     + Basics
+       + Conditional Probability (Conditioning)
+         Two dependent events.
+         P(E|F) => Probability of E given F.
+         P(lung cancer | smoker) - the probability of having lung cancer given that you are a smoker.
+       + *Bayes's Theorem*
+         P(A|B) = P(A & B) / P(B) 
+                = P(B|A)P(A) / (P(B|A)P(A) + P(B|~A)P(~A))
+          
+       + Marginalisation
+       + *Measures of Central Tendency*
+         + Also, known as measures of location.
+         + The idea of central tendency is to give you the idea of what a typical value for a variable.
+         + Mean => average value
+         + Median  => sort the values in ascending / decending order and pick the mid value
+         + Mode => frequently occuring value
+       + *Measures of Dispersion*
+         + It refers to how much the value of the variable is "spread out".
+         + Following are some measures of Dispersion:
+           + Range => difference between the highest and lowest value
+           + Interquartile Range => difference between 75th and 25th percentile values.
+           + Variance, Standard Deviation:
+              It shows how much the individual values in a dataset are vary from mean / average value.
+       + Co-variance
+       
+    * Probability Distribution
+      + The Normal Distribution
+        + Also known as Gaussian Distribution
+      + The Binomial Distribution
+      + Central Limit Theorem
+    * Hypothesis Testing
+      + Confidence interval
+      + p-value => probability value
+    * The Correlation coefficient
+       
+     
   * Computer Science
      + [Interactive SQL Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial)
      + [SQL Tutorial](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/)
