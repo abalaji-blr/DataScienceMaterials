@@ -1,0 +1,30 @@
+
+## Neural Network
+
+ * Resources
+   + [Data Mining & Artificial Neural Network](https://www.youtube.com/playlist?list=PLea0WJq13cnCS4LLMeUuZmTxqsqlhwUoe)
+ 
+ * Blog
+ 
+## Notes
+
+**Types of Neural Network**
+
+1. Feed Forward Network
+2. Recurrent Network. (has cycles)
+3. Symmetric Network.
+
+* Perceptron is an aritifical Neuron. It has inputs and their weights. They are summed up and transformed to get the output.
+
+** Following are different kind of transformations**
+  1) Unit step (threshold)
+  2) Sigmoid
+     + Logistic Sigmoid: Value range from 0 to 1
+     + Tangential Sigmoid: Value range from -1 to +1
+     
+  3) Piecewise Linear
+  4) Gaussian Function (aka bell shaped curve)
+  
+  
+
+ 
