@@ -2,7 +2,16 @@
 ## Neural Network
 
  * Resources
-   + [Data Mining & Artificial Neural Network](https://www.youtube.com/playlist?list=PLea0WJq13cnCS4LLMeUuZmTxqsqlhwUoe)
+   * **Vidoes**
+     + [Data Mining & Artificial Neural Network](https://www.youtube.com/playlist?list=PLea0WJq13cnCS4LLMeUuZmTxqsqlhwUoe)
+     + [Google's Free online Deep Learning course at Udacity](https://www.youtube.com/playlist?list=PLAwxTw4SYaPn_OWPFT9ulXLuQrImzHfOV)
+   
+   * **Books**
+     + [Online Book : Deep Learning  By Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
+     + [Online Book: Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+   
+   *  **Tutorials**
+      + [Tutorial: Deep Learning Tutorial from Stanford](http://ufldl.stanford.edu/tutorial/)
  
  * Blog
  
