@@ -5,6 +5,7 @@
    * **Vidoes**
      + [Data Mining & Artificial Neural Network](https://www.youtube.com/playlist?list=PLea0WJq13cnCS4LLMeUuZmTxqsqlhwUoe)
      + [Google's Free online Deep Learning course at Udacity](https://www.youtube.com/playlist?list=PLAwxTw4SYaPn_OWPFT9ulXLuQrImzHfOV)
+     + [Exercise #1](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/udacity/1_notmnist.ipynb)
    
    * **Books**
      + [Online Book : Deep Learning  By Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
@@ -36,4 +37,32 @@
   
   
 
+ * Convolutional Neural network
  
+  This is a type of feed forward neural network, also called as CNN or ConvNet. This models the animal visual perception. This can be applied for visual recognition tasks.
+  
+  The setup of the network will be something like below:
+  
+  Input Layer -> Convolution Layer -> Other Hidden Layer -> Output Layer
+  
+  **The Convolution Layer** : is built using a learnable filter (aka Kernel or patch). The filter is a small neural network (with certain k outputs). The filter scans through the input layer and generates the convolution layer with more depth. This is called convolution. So, network may have multiple convolution layer (basically pyramid structure in terms of increase in the depth, decrease in the image size or spatial information is sequeezed out) before sending it to classifier.
+  
+  The filter / path, works due to **Statistical Invariance** (Translational invariance). Basically use the bounding box and if the image appears any where in the box, they are treated same. In other words, the share the **same weights**.
+  
+  [Check the wikipedia for an example](https://en.wikipedia.org/wiki/Convolutional_neural_network#/media/File:Typical_cnn.png)
+  
+     
+ * Building blocks of CNN (aka *ConvNet*)
+   * Discrete convolution
+   * Pooling
+      * Avearge pooling
+      * Max Pooling
+   * 1x1 Convolution
+   * Inception
+  
+  * Demos / References:
+  
+    * **[Follow the link LENet (Yann Lecun) for the demos]**(http://yann.lecun.com/exdb/lenet/)
+    * **Neural network for image classification (ImageNet)** using CNN by Alex Krizhevsky.
+    * [A guide to convolution arithmetic for deep learning by Vincent Dumoulin]()
+  

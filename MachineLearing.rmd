@@ -37,6 +37,8 @@ install.packages("xgboost", repos="http://dmlc.ml/drat/", type = "source")
     + [Video](https://www.youtube.com/watch?v=QHsmAM6nktY&index=5&list=PLCj1LhGni3hOA2q0sfDNKBH9WIlLxXkbn#t=28.418673)
     + [Time Series with R](https://www.researchgate.net/profile/Andrew_Metcalfe6)
     
+  * t-SNE
+    + [t-SNE plots](http://distill.pub/2016/misread-tsne/)
     
   * Blog
     + [Reddit](https://www.reddit.com/r/MachineLearning)
