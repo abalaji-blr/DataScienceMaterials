@@ -6,6 +6,14 @@
      + [Machine Learning Mastery](http://machinelearningmastery.com/)
      + [Machine Learning Getting Started](http://machinelearningmastery.com/start-here/#getstarted)
      
+     * Optimization Algorithms
+       + [Intro to Gradient Descent with pictures](https://pmirla.github.io/2016/06/05/gradient-explanation.html)
+       + Gradient Descent : Uses all training examples to find out the next descent.
+       + Stochastic Gradient Descent: Randomly samples one training example to identify the descent and updates the weights and continues. This is used in the "online" learning as well.
+       + When the training examples are more, Stochastic Gradient is used. Otherwise, Gradient descent is used.
+       + [Intuition behind Gradient descent](https://www.quora.com/What-is-an-intuitive-explanation-of-gradient-descent)
+       + [Intuituion behind Stochastic Gradient Descent](https://www.quora.com/What-is-an-intuitive-explanation-of-stochastic-gradient-descent)
+       +[Details: Diff between Gradient Descent & Stochastic Gradient Descent](https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent)
      
      * Supervised Learning : SVM
         + [SVM](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM)

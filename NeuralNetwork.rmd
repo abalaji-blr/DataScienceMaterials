@@ -6,6 +6,8 @@
      + [Data Mining & Artificial Neural Network](https://www.youtube.com/playlist?list=PLea0WJq13cnCS4LLMeUuZmTxqsqlhwUoe)
      + [Google's Free online Deep Learning course at Udacity](https://www.youtube.com/playlist?list=PLAwxTw4SYaPn_OWPFT9ulXLuQrImzHfOV)
      + [Exercise #1](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/udacity/1_notmnist.ipynb)
+     
+     + [Deep Learning by Nando de Frietas](https://www.youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu)
    
    * **Books**
      + [Online Book : Deep Learning  By Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
