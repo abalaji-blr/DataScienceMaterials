@@ -14,6 +14,7 @@
        + [Intuition behind Gradient descent](https://www.quora.com/What-is-an-intuitive-explanation-of-gradient-descent)
        + [Intuituion behind Stochastic Gradient Descent](https://www.quora.com/What-is-an-intuitive-explanation-of-stochastic-gradient-descent)
        +[Details: Diff between Gradient Descent & Stochastic Gradient Descent](https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent)
+       + [Maths Insight: Derivative of Gradient Introduction](http://mathinsight.org/directional_derivative_gradient_introduction)
      
      * Supervised Learning : SVM
         + [SVM](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM)
@@ -58,4 +59,21 @@ install.packages("xgboost", repos="http://dmlc.ml/drat/", type = "source")
     + [Awesome Machine Learning resources](https://github.com/josephmisiti/awesome-machine-learning)
     
     
-    
+## code samples
+
+## sigmoid
+```{r eval=false}
+# sigmoid definition
+
+sigmoid = function(x) {
+  1 / ( 1 + exp(-x))
+}
+
+# generate the list
+num_list <- seq(-10, 10, 0.1)
+
+# plot them
+plot(num_list, sigmoid(num_list), col = 'blue')
+
+```
+

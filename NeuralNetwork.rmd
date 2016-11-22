@@ -33,13 +33,12 @@
   2) Sigmoid
      + Logistic Sigmoid: Value range from 0 to 1
      + Tangential Sigmoid: Value range from -1 to +1
-     
   3) Piecewise Linear
   4) Gaussian Function (aka bell shaped curve)
   
   
 
- * Convolutional Neural network
+##Convolutional Neural network
  
   This is a type of feed forward neural network, also called as CNN or ConvNet. This models the animal visual perception. This can be applied for visual recognition tasks.
   
@@ -68,3 +67,27 @@
     * **Neural network for image classification (ImageNet)** using CNN by Alex Krizhevsky.
     * [A guide to convolution arithmetic for deep learning by Vincent Dumoulin]()
   
+  
+## Recurrent Neural Network (RNN)
+
+ * Important liks / blog etc
+   + [WildML: Intro to RNN ](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
+   + [Blog: Understanding LSTM ](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+   + [Blog: A deep dive into RNN](http://nikhilbuduma.com/2015/01/11/a-deep-dive-into-recurrent-neural-networks/)
+   
+   
+ * Notes:
+   + The idea of RNN is to make use of sequential information. The following are the applications where RNN is used:
+     1) Translation from one language to another.
+     2) Caption generation from the images.
+     3) Speech recognition
+     4) Handwriting recognition
+   
+   + Recurrent neural network has cycles, which means it can "remember" the immediate past event. The next state can be predicted based on the previous state. (Refer to Markov model - markov chain, hidden markov model etc.).
+   
+   + The backpropagation of the weights (from current time to all previous time, also called as *BackPropagation Thourgh Time [BPTT]*) result in the following problems: *exploding gradient and / or vanishing gradient.* 
+   The exploding gradient is resolved by gradient clipping. Basically, limit the norm to certain max value.
+   The vanishing gradient is solved to remember only last few prev. states and not all.
+   This is achived using LSTM. Note that the LSTM uses gated logic to - write, read & forget (reset).
+   
+   
