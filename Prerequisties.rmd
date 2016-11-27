@@ -58,10 +58,16 @@
       + p-value => probability value
     * The Correlation coefficient
        
-     
-  * Computer Science
+  
+## Descriptive Statistics
+
+## Inferential Statistics
+
+## Computer Science
+  
      + [Interactive SQL Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial)
      + [SQL Tutorial](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/)
      + [SQL Joins](https://www.youtube.com/watch?v=KTvYHEntvn8)
         
      
+  

@@ -77,3 +77,46 @@ plot(num_list, sigmoid(num_list), col = 'blue')
 
 ```
 
+## Machine Learning Notes
+
+### Supervised Learning
+
+From the labeled dataset, gleaning info. from it. In the mathematical terms, it's called *function approximation* to generalize. In other words, from the traning examples, identify the pattern and formulate the expression. It's also called *induction* ( ie., specific set of examples to *generalization*)
+
+#### Classification
+ Mapping the input to discrete set of labels (True/ False, Male/ Female etc).
+ 
+##### Decision Trees
+
+  * Representation
+  
+  It is a tree. The nodes represent the *attributes* or *indepdent variables* from the dataset. The edges represent the *value*.
+  
+  
+  * Algorithm (ID3 / C4.5)
+  
+  Word Dichotomise : separate into two parts.
+  ID3 : Iterative Dichotomiser 3 (probably version 3?). 
+  C4.5 is extension to ID3, which can be used for *classification*. Also, called as *Statistical Classifier*.
+  
+  Entropy: measure of randomness / uncertainity. Entropy is zero when the outcome is certain.
+  
+  For a given dataset S, the entropy is defined as H(S) = - p(x) log(x). See wikipedia more info.
+  
+  When entropy is zero, ie., H(S) = 0, the dataset S is perfectly classified.
+  
+  
+  Information Gain: is a measure which describes how much the uncertainity is reduced due to splitting by a certain attribute.
+  
+  So, algorithm has to maximize the information gain.
+  
+ 
+#### Regression
+ Mapping the input to value ( some real number).
+
+### Unsupervised Learning
+
+Provided with bunch of data, you need to find the *structures* among them. In otherwords, we need to group them based on certain things.
+
+### Reinforment Learning
+

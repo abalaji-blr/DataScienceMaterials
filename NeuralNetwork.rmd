@@ -26,6 +26,10 @@
 2. Recurrent Network. (has cycles)
 3. Symmetric Network.
 
+## Ariticial Neural Network (ANN)
+
+ [Intro at quora about ANN](https://www.quora.com/What-are-artificial-neural-networks).
+ 
 * Perceptron is an aritifical Neuron. It has inputs and their weights. They are summed up and transformed to get the output.
 
 ** Following are different kind of transformations**
@@ -90,4 +94,16 @@
    The vanishing gradient is solved to remember only last few prev. states and not all.
    This is achived using LSTM. Note that the LSTM uses gated logic to - write, read & forget (reset).
    
-   
+## More RNN
+
+## Multiplicative Neural Network (MRNN)
+
+It is an recurrent neural network. To calculate the weights instead of additive, they are multiplied.
+
+### Echo State Networks (ECN)
+
+The Echo State Networks is a instance of general concept - Reservoir Computing.
+The idea behind ECN is to get the benefits of RNN but without facing the problem of RNN - the vanishing gradient & exploding gradient.
+
+The Reservoir computing is the extension to Neural Network. The ECN has a reservoir of sparsely connected neurons with sigmoidal transfer function. The input data is connected to the reservoir. The weights that are trained are the output wegihts which connects from reservoir to output neurons.
+
