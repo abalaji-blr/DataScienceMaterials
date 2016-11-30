@@ -5,6 +5,7 @@
      + [Top Machine Learning MOOCs](http://www.kdnuggets.com/2016/07/top-machine-learning-moocs-online-lectures.html)
      + [Machine Learning Mastery](http://machinelearningmastery.com/)
      + [Machine Learning Getting Started](http://machinelearningmastery.com/start-here/#getstarted)
+     + [CalTech: Machine Learning Video Library](https://work.caltech.edu/library/)
      
      * Optimization Algorithms
        + [Intro to Gradient Descent with pictures](https://pmirla.github.io/2016/06/05/gradient-explanation.html)
@@ -85,7 +86,24 @@ From the labeled dataset, gleaning info. from it. In the mathematical terms, it'
 
 #### Classification
  Mapping the input to discrete set of labels (True/ False, Male/ Female etc).
- 
+
+##### Terminologies
+    1) Bias
+    2) Variance
+    
+    3) *Bagging* : also called as Boostrap AGGregatING (BAGGING). *Boostrap* means, a random subset of sampling (with replacement) of training data is used for the learning process. These are repeated multiple times. The results from different learners are averaged (mean) to find out the prediction. In the case of classification problem, the majority of the votes, decides the result class.
+    
+    *Sampling with replacement* means, during the subset sampling, the training examples will left in the training dataset. So, the duplicate examples can be there in the subset as it is a random process.
+    
+    Bagging Algorithm: *Random Forest*
+    
+    4) *Boosting* is a procedure which combines the group of *weak* learners. The algorithm sequentially applies the *weak learning* algorithm repeatedly to the *modified* versions of the training data. The prediction from all will be combined through a *weighted* majority vote for the final prediction.
+    
+    Refer Book : The Elements of Statistical Learning 
+    
+    5) Correlation
+    6) Co-variance
+
 ##### Decision Trees
 
   * Representation
@@ -110,7 +128,28 @@ From the labeled dataset, gleaning info. from it. In the mathematical terms, it'
   
   So, algorithm has to maximize the information gain.
   
- 
+  The Decision Tree Learning is as follows:
+  
+  1. Pick Best Attribute. Best -> splits the data well
+  2. Answer Asked question.
+  3. Follow the answer path.
+  4. Repeat step 1, until you got an answer.
+  
+##### Random Forest
+  Random Forest builds many de-correlated trees and averages the result based on them. This is also called as Bagging or Boostrap Aggregation.
+  
+  The idea is to average the noisy but unbiased models, which reduces the variance as well.
+  
+  When the Random Forest is used for classification problem, the *votes* are obtained from each tree and then classifies using the majority vote. When used for regression, the prediction from each tree is averaged to get the final prediction.
+  
+  The *variable importance* can be obtained through this algorithm. The variable importance is calculated using *GINI* coefficient. It is a measure of "inequality" in the distribution. It's value range from 0 to 1. When Gini coefficient is zero means, the inequality is zero, ie., distribution is equal. When it's one, the inequality is one, that is distribution is not equal. Refer to *Lorenz Curve* as well as they are related.
+  
+  * Links:
+    + [Leo Breiman: Random Forest Overview](http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm#overview)
+    + [Adele Cutler: Random Forest Overview](http://www.math.usu.edu/~adele/RandomForests/index.htm)
+  
+  
+
 #### Regression
  Mapping the input to value ( some real number).
 
