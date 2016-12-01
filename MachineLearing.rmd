@@ -88,8 +88,17 @@ From the labeled dataset, gleaning info. from it. In the mathematical terms, it'
  Mapping the input to discrete set of labels (True/ False, Male/ Female etc).
 
 ##### Terminologies
-    1) Bias
-    2) Variance
+    1) *Bias Error* are the simplfying assumptions made by a model by the target function easier to learn.
+    
+    *Low Bias*: Suggests more assumptions about the form of the target function.
+    
+    *High Bias*: Suggests less assumptions about the form of the target function.
+    
+    2) *Variance Error* is the amount that the estimate of the target function will change if the different training data is used.
+    
+    *Low Variance* : Suggests small changes to the estimate of the target function with changes to the training dataset.
+    
+    *High Variance* suggests large changes to the estimate of the target function with changes to the training dataset.
     
     3) *Bagging* : also called as Boostrap AGGregatING (BAGGING). *Boostrap* means, a random subset of sampling (with replacement) of training data is used for the learning process. These are repeated multiple times. The results from different learners are averaged (mean) to find out the prediction. In the case of classification problem, the majority of the votes, decides the result class.
     
