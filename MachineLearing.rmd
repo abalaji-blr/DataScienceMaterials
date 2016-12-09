@@ -80,40 +80,45 @@ plot(num_list, sigmoid(num_list), col = 'blue')
 
 ## Machine Learning Notes
 
-### Supervised Learning
-
-From the labeled dataset, gleaning info. from it. In the mathematical terms, it's called *function approximation* to generalize. In other words, from the traning examples, identify the pattern and formulate the expression. It's also called *induction* ( ie., specific set of examples to *generalization*)
-
-#### Classification
- Mapping the input to discrete set of labels (True/ False, Male/ Female etc).
-
-##### Terminologies
-    1) *Bias Error* are the simplfying assumptions made by a model by the target function easier to learn.
+   * Terminologies
+     + *Bias Error* are the simplfying assumptions made by a model by the target function easier to learn.
     
     *Low Bias*: Suggests more assumptions about the form of the target function.
     
     *High Bias*: Suggests less assumptions about the form of the target function.
     
-    2) *Variance Error* is the amount that the estimate of the target function will change if the different training data is used.
+     + *Variance Error* is the amount that the estimate of the target function will change if the different training data is used.
     
     *Low Variance* : Suggests small changes to the estimate of the target function with changes to the training dataset.
     
     *High Variance* suggests large changes to the estimate of the target function with changes to the training dataset.
     
-    3) *Bagging* : also called as Boostrap AGGregatING (BAGGING). *Boostrap* means, a random subset of sampling (with replacement) of training data is used for the learning process. These are repeated multiple times. The results from different learners are averaged (mean) to find out the prediction. In the case of classification problem, the majority of the votes, decides the result class.
+     + *Bagging* : also called as Boostrap AGGregatING (BAGGING). *Boostrap* means, a random subset of sampling (with replacement) of training data is used for the learning process. These are repeated multiple times. The results from different learners are averaged (mean) to find out the prediction. In the case of classification problem, the majority of the votes, decides the result class.
     
     *Sampling with replacement* means, during the subset sampling, the training examples will left in the training dataset. So, the duplicate examples can be there in the subset as it is a random process.
     
     Bagging Algorithm: *Random Forest*
     
-    4) *Boosting* is a procedure which combines the group of *weak* learners. The algorithm sequentially applies the *weak learning* algorithm repeatedly to the *modified* versions of the training data. The prediction from all will be combined through a *weighted* majority vote for the final prediction.
+    + *Boosting* is a procedure which combines the group of *weak* learners. The algorithm sequentially applies the *weak learning* algorithm repeatedly to the *modified* versions of the training data - ie., boosting up-weights the training examples that previous model got wrong. The prediction from all will be combined through a *weighted* majority vote for the final prediction.
     
     Refer Book : The Elements of Statistical Learning 
     
-    5) Correlation
-    6) Co-variance
+    + Correlation
+    
+    + Co-variance
+    
+    + Entropy
+    
+    + Cross Entropy
 
-##### Decision Trees
+## Supervised Learning
+
+From the labeled dataset, gleaning info. from it. In the mathematical terms, it's called *function approximation* to generalize. In other words, from the traning examples, identify the pattern and formulate the expression. It's also called *induction* ( ie., specific set of examples to *generalization*)
+
+### Classification
+ Mapping the input to discrete set of labels (True/ False, Male/ Female etc).
+
+#### Decision Trees
 
   * Representation
   
@@ -144,7 +149,7 @@ From the labeled dataset, gleaning info. from it. In the mathematical terms, it'
   3. Follow the answer path.
   4. Repeat step 1, until you got an answer.
   
-##### Random Forest
+#### Random Forest
   Random Forest builds many de-correlated trees and averages the result based on them. This is also called as Bagging or Boostrap Aggregation.
   
   The idea is to average the noisy but unbiased models, which reduces the variance as well.
@@ -159,12 +164,12 @@ From the labeled dataset, gleaning info. from it. In the mathematical terms, it'
   
   
 
-#### Regression
+### Regression
  Mapping the input to value ( some real number).
 
-### Unsupervised Learning
+## Unsupervised Learning
 
 Provided with bunch of data, you need to find the *structures* among them. In otherwords, we need to group them based on certain things.
 
-### Reinforment Learning
+## Reinforment Learning
 
