@@ -33,19 +33,7 @@
                 = P(B|A)P(A) / (P(B|A)P(A) + P(B|~A)P(~A))
           
        + Marginalisation
-       + *Measures of Central Tendency*
-         + Also, known as measures of location.
-         + The idea of central tendency is to give you the idea of what a typical value for a variable.
-         + Mean => average value
-         + Median  => sort the values in ascending / decending order and pick the mid value
-         + Mode => frequently occuring value
-       + *Measures of Dispersion*
-         + It refers to how much the value of the variable is "spread out".
-         + Following are some measures of Dispersion:
-           + Range => difference between the highest and lowest value
-           + Interquartile Range => difference between 75th and 25th percentile values.
-           + Variance, Standard Deviation:
-              It shows how much the individual values in a dataset are vary from mean / average value.
+
        + Co-variance
        
     * Probability Distribution
@@ -61,7 +49,55 @@
   
 ## Descriptive Statistics
 
+Descriptive statistics  are used to describe the basic features of the data in study.
+They provide the quantitative data in a manageable form. ie., simplify the large amount of data in a sensible way.
+
+There are three characterstics for a single variable that we tend to look at:
+
+   1) *Measures of Central Tendency*
+         + Also, known as measures of location.
+         + The idea of central tendency is to give you the idea of what a typical value for a variable.
+         + Mean => average value
+         + Median  => sort the values in ascending / decending order and pick the mid value
+         + Mode => frequently occuring value
+    
+    2) *Measures of Dispersion*
+         + It refers to how much the value of the variable is "spread out".
+         + Following are some measures of Dispersion:
+           + Range => difference between the highest and lowest value
+           + Interquartile Range => difference between 75th and 25th percentile values.
+           + Variance, Standard Deviation:
+              It shows how much the individual values in a dataset are vary from mean / average value.
+ 
+     3) *Distribution*
+         It is the summary of the frequency of individual or range of values for a variable.
+The different kinds of distributions are:
+
+       1) Uniform Distribution
+       2) Berouli Distribution (aka Binomial)
+       3) Multinomial Distribution
+       4) Gaussian Distribution (aka Bell Curve)
+       
+### Correlation
+  Correlation describes the relationship between the two *variables*. The relationship refers to the *corresspondence* between the two variables. The correlation relationship simply says that the two variables perform in a synchronised manner.
+  
+  
 ## Inferential Statistics
+   Inferential statistics helps to make inference from data. The major inferential statistics come from statistical model called *General Linerar Model (GLM)*.
+   
+   The GLM provides the foundation for the following statistical methods:
+   
+   1) t-test
+   2) Analysis of Variance (ANOVA)
+   3) Analysis of CoVariance (ANCOVA)
+   4) Regression Analysis
+   5) MultiVariate Methods:
+       a) Factor Analysis
+       b) Cluster Analysis
+       c) Multidimensional Scaling
+       d) Discriminant Function Analysis
+       e) Canonical Correlation
+
 
 ## Computer Science
   
