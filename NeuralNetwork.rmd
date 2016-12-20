@@ -107,3 +107,20 @@ The idea behind ECN is to get the benefits of RNN but without facing the problem
 
 The Reservoir computing is the extension to Neural Network. The ECN has a reservoir of sparsely connected neurons with sigmoidal transfer function. The input data is connected to the reservoir. The weights that are trained are the output wegihts which connects from reservoir to output neurons.
 
+## Hopfield Nets
+
+  * Single layer network.
+  * It is a Fully connected network except the connection to its own.
+  * It is a Recurrent Neural network (RNN)
+  * Takes binary inputs; weights are symmetric.
+  * It is used to store memories.
+  * It is an *energy based model*
+  * Used for simple pattern recognition.
+  
+## Boltzmann Machines
+
+  * It is a Hopfield network with binary stochastic units instead of binary threshold units.
+  * It has hidden units as well.
+  
+  
+  
