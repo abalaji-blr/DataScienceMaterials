@@ -9,6 +9,8 @@
      
      + [Deep Learning by Nando de Frietas](https://www.youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu)
    
+     + [Graphical Visualization of Different Neural Networks](http://www.asimovinstitute.org/neural-network-zoo/)
+     
    * **Books**
      + [Online Book : Deep Learning  By Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
      + [Online Book: Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
@@ -17,7 +19,8 @@
       + [Tutorial: Deep Learning Tutorial from Stanford](http://ufldl.stanford.edu/tutorial/)
  
  * Blog
- 
+   1. [Deep Learning dot Net](http://deeplearning.net/)
+  
 ## Notes
 
 **Types of Neural Network**
@@ -41,6 +44,9 @@
   4) Gaussian Function (aka bell shaped curve)
   
   
+## Gradient Descent
+
+## Stochastic Gradient Descent
 
 ##Convolutional Neural network
  
@@ -107,20 +113,67 @@ The idea behind ECN is to get the benefits of RNN but without facing the problem
 
 The Reservoir computing is the extension to Neural Network. The ECN has a reservoir of sparsely connected neurons with sigmoidal transfer function. The input data is connected to the reservoir. The weights that are trained are the output wegihts which connects from reservoir to output neurons.
 
-## Hopfield Nets
+# Graphical Models
+
+## Need for Graphical Models
+   Modelling a rich distribution of random variables ( thousands / millions) is a challenging task, computationally and statistically.
+   For example, if we take image input of say 16x16 grey scale (binary value of 0 & 1), then the possible parameters are 2^256. In other words, if we have n discrete variables and each have k states, then the required parameters are k^n. This is not feasible because of memory and runtime.
+   The table based approach tries to model every possible kind of interaction with every possible subset of variables.
+   Usually, most variables influence indirectly. 
+   The *Graphical Models* provide a framework to model only direct interactions between the random variables. These Graphical Models are also called as *Structured Probablistic Models*. This requires significantly less parameters.
+   
+## Directed Models.
+   In the Directed Models, the edges are directed. It's a directed graph.
+   
+   a -> b -> c
+   
+   The probability distribution of "b" is described as the conditional distribution of "a".
+   
+   This is also called as *Bayesian network* (uses conditional probability).
+
+## UnDirected Models.
+   In the Undirected Models, the edges are undirected. They are also called as *Markov Random Field (MRF)*, *Markov Network*.
+   For each *clique* in the undirected graph, a factor called clique potential measures the affinity of the variables in the clique. They provide the unnormalized probability distribution.
+   To work with many cliques, it needs to normailised (the final probability should be between 0 to 1). The normalizing constant Z is called *partition funciton*.
+   A distribution defined by normailzing a product of clique potentials is called as *Gibbs Distribution*.
+
+### UnDirected Model - Energy Based Model:
+   The undirected model depend on assumption p(x) > 0. That is enforced by Energy based model.
+   p(x) = exp(-E(x))
+   E(x) is Enegry function.
+   exp(z) is positive for all z. This gurantees that, for all values of x, the energy function will not be zero.
+
+## Hopfield Nets (HN)
 
   * Single layer network.
   * It is a Fully connected network except the connection to its own.
   * It is a Recurrent Neural network (RNN)
-  * Takes binary inputs; weights are symmetric.
+  * Takes binary inputs; *weights are symmetric.*
   * It is used to store memories.
   * It is an *energy based model*
+  * It follows unsupervised learning.
   * Used for simple pattern recognition.
+  * It is often called as associate memories.
   
-## Boltzmann Machines
+## Boltzmann Machines (BM)
 
   * It is a Hopfield network with binary stochastic units instead of binary threshold units.
-  * It has hidden units as well.
+  * It is also called as *Stochastic Hopfield Net*
+  * Binary false is negative 1, (-1) and Binary True is positive 1 (+1).
+  * The architecture is similar to Hopfield Net but it has 2 layers - "visible" and hidden.
+  * The "visible" layer act as input and output (reconstruction).
+  * The learning process is difficult and time consuming (slow).
+  
+## Restricted Boltzmann Machines (RBM)
+
+  * It is a special case of Boltzmann Machine.
+  * This network also have both "visible" and hidden layers.
+  * No connections among the visible neurons.
+  * No Connections among the hidden neurons.
+  * That is the *restriction* in RBM when compared with BM.
+  * In computer lingo, it is a bipartite graph.
+  
+  
   
   
   
