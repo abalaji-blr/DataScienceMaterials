@@ -20,7 +20,7 @@
       
         
       
-  * Probablity & Statistics
+### Probablity & Statistics
      + [Statistics explained with pictures](http://www.mathsisfun.com/data/index.html)
      + [Online lectures](http://www.ilectureonline.com/lectures/subject/MATH/18/164/1670)
      + Basics
@@ -103,7 +103,25 @@ The different kinds of distributions are:
        d) Discriminant Function Analysis
        e) Canonical Correlation
 
+### Probability & Statistics FAQs:
 
+  * What is difference between Probablity & Statistics?
+  
+     Probability:
+     Statistics:
+     
+  * What is difference between *discrete and continuous* probability distribution?
+  
+    Discrete Distribution :  the variable can take a value from a set of values.
+    Continuous Distribution: Any value in the range.
+
+ * What is the difference between *prior and posterior* in statistics?
+ 
+   *Prior*: is the probability distribution that represents the uncertainity over your interested variable before you have sampled any data and tried to predict it.
+   
+   *Posterior*: is the probability distribution that represents the uncertainity over the interested variables after sampling. It is a conditional distribution because it conditions of the sampled data.
+   
+   
 ## Computer Science
   
      + [Interactive SQL Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial)

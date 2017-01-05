@@ -173,7 +173,27 @@ The Reservoir computing is the extension to Neural Network. The ECN has a reserv
   * That is the *restriction* in RBM when compared with BM.
   * In computer lingo, it is a bipartite graph.
   
+  * [RBM video lecture - Ali Ghodsi](https://www.youtube.com/watch?v=FJ0z3Ubagt4)
   
+  * Data Particle
+  * Fantasy Particle
   
+  * Contrastive Divergence (CD) : is a recipe for training undirected graphical models. It is an approximate Maximum Likelihood learning algorithm proposed by Geoffery Hinton.
+  [More details](http://www.robots.ox.ac.uk/~ojw/files/NotesOnCD.pdf)
+    
+  * Persistent Contrastive Divergence (PCD)
+  * Fast Persistent Contrastive Divergence (FPCD)
+  * Gibbs Chain
+  *
   
+  * Persistent Contrastive Divergence (PCD)
   
+## Sigmoid Belief Network (SBN)
+
+  * It is a *generative model*
+  * It has both visible and hidden units.
+  * The SBN is also *graphical model* like BM. But in the case of SBN, it is a *directed acyclic graph (DAG).*
+  * The visible units are at the leaf level.
+  * To turn ON one unit, it depends on the state of its parents.
+  
+## Deep Belief Network (DBN)

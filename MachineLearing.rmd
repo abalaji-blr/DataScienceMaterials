@@ -173,3 +173,27 @@ Provided with bunch of data, you need to find the *structures* among them. In ot
 
 ## Reinforment Learning
 
+
+# Models
+
+  In the case of supervised learning, the models are built based on the training data points and labels.
+  These models are of two categories: *Generative & Discriminative*
+  
+  A *generative model* describes how the data is generated in terms of probabilistic model.
+It is useful for *prediction, impute missing data, compress the dataset and generate unseen new data*.
+
+  In the case of *discriminative model*, it is meant primarily for prediction. In other words, the *discriminative model* performs much better for prediction.
+  
+  Following are the *generative models*:
+    1) Naive Bayes
+    2) Hidden Markov Model
+    3) Boltzmann Machine
+    4) Sigmoid Belief Network
+    
+  Following are *discriminative models*:
+    1) Linear Regression
+    2) Logistic Regression
+    3) Decision Trees / Random Forests
+    4) Boosting
+    
+  
