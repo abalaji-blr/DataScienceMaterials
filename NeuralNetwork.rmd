@@ -10,6 +10,9 @@
      + [Deep Learning by Nando de Frietas](https://www.youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu)
    
      + [Graphical Visualization of Different Neural Networks](http://www.asimovinstitute.org/neural-network-zoo/)
+    
+     + [Stanford: Convolutional Neural Network- Karpathy](http://cs231n.github.io/) 
+     + [Stanford: Deep learning course on NLP](http://cs224d.stanford.edu/index.html)
      
    * **Books**
      + [Online Book : Deep Learning  By Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
@@ -18,8 +21,10 @@
    *  **Tutorials**
       + [Tutorial: Deep Learning Tutorial from Stanford](http://ufldl.stanford.edu/tutorial/)
  
- * Blog
+ * Blog / Podcast / Paper
    1. [Deep Learning dot Net](http://deeplearning.net/)
+   2. [Talking Machine](http://www.thetalkingmachines.com/blog/)
+   3. [Deep Learning Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
   
 ## Notes
 
@@ -76,6 +81,7 @@
     * **[Follow the link LENet (Yann Lecun) for the demos]**(http://yann.lecun.com/exdb/lenet/)
     * **Neural network for image classification (ImageNet)** using CNN by Alex Krizhevsky.
     * [A guide to convolution arithmetic for deep learning by Vincent Dumoulin]()
+    * [Stanford CNN course - Karpathy](http://cs231n.github.io/)
   
   
 ## Recurrent Neural Network (RNN)
@@ -197,3 +203,43 @@ The Reservoir computing is the extension to Neural Network. The ECN has a reserv
   * To turn ON one unit, it depends on the state of its parents.
   
 ## Deep Belief Network (DBN)
+
+ * Uses stack of RBM to form the Deep Belief Network.
+ * The output of one RBM becomes the input to next stage RBM.
+ * The training process involves, training each RBM one at a time.
+ * The trainng process uses Contrastive Divergence, similar to RBM.
+ * Some edges are directed and most of edges are undirected.
+ 
+ * [Overview @ scholarpedia](http://www.scholarpedia.org/article/Deep_belief_networks)
+ * [More info : Watch youtube video](https://www.youtube.com/watch?v=WKet0_mEBXg)
+ 
+## Autoencoder
+
+ * Is used to learn the representation (encode) of user input data, for the purpose of dimensionality reduction.
+ * Widely used to learn *generative models* of data.
+ 
+ * The simplest architecture is - a feedforward, non recurrent neural network.
+ * The number of nodes in the input layer and output layer are same.
+   Because, output layer is used to reconstruct the input (in other words, decode).
+ * These are used for *unsupervised* learning.
+ 
+ * Note that, this is similar to PCA but PCA does only linear transformations.
+   Whereas, autoencoder performs *non linear transfromations.*
+   
+ * The variations of autoencoder are:
+     1) Donoising autoencoder
+     2) Sparse autoencoder
+     3) Variational autoencoder
+     4) Contractive autoencoder
+     
+## Latent Semantic Analysis (LSA)
+   LSA is a technique which analyzes the relationships between the set of documents and terms used in them. 
+   It uses the *term - document* matrix which describes the terms used in the document.
+   The row refers to the term and the column corresponds to document.
+   
+   The challenges:
+    1) Computational complexity: Calculating the SVD (Singular Value Decomposition) matrix. It's time consuming.
+    2) Adding new document, which involves recomputing the SVD.
+   
+     
+ 
