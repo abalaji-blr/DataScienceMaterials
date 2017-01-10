@@ -18,9 +18,69 @@
       
       + Matrices
       
-        
+      + Numerical Computation
       
-### Probablity & Statistics
+## Linear Algebra 
+  
+  The following are the different mathematical objects: Scalar, Vector, Matrices and Tensor (array with more than two axes).
+  
+  Matrix operations: The matrix operations provides a *transformation* (scale / rotate / shear / flip) of the data.
+  
+   0) Addition C = A + B
+   1) Subtraction C = A - B
+   2) Product C = AB
+   2b) Determinant of a matrix
+       * It is just a number
+       * Determinant can be calculated only for square matrices.
+       * If the determinant is zero, then there won't exist the inverse matrix and
+         that matrix is called *singular* matrix.
+         
+       * Invertible Matrix: Each point in one space can be transformed to a point in the newly transformed space. The transform of these points can be reversed. Such transformation matrix is called *Invertible Matrix*.
+       
+       * Non-invertible matrix: When many points in one vector space transforms to the same point in the destination space. Then we can't reverse those transformations.
+       
+       * det(AB) = det(A).det(B)
+       * [what is a determinant mean](https://www.quora.com/What-does-the-determinant-of-a-matrix-mean)
+       * [What is a determinant : explanation with pictures](https://arcsecond.wordpress.com/2012/01/24/what-is-a-determinant/)
+       
+       
+   3) Distributive A(B+C) = AB + AC
+   4) Associative A(BC) = (AB)C
+   5) Identity Matrix AI = A,
+      Where I is identify matrix, the main diagonal elements are ONE.
+   6) Inversion (A^-1)A = I (or) A(A^-1) = I
+   7) Norm: Length of the vector.
+       L1 norm:
+       L2 norm:
+   8) Special Matrices & Vectors:
+      a) Diagonal matrix
+      b) Orthogonal matrix : (A^T)A = A(A^T) = I
+         which implies that (A^T) = (A^-1)
+         
+    9) EigenDecomposition
+       * Eigen Vector: The word *Eigen* is a German word, meaning *self / own / specific / inherient*. The vector is does not change the direction of the transformation is called eigen vector.
+       A matrix can be decomposed into eigen vector and eigen values.
+       
+    10) Singular Value Decomposition (SVD)
+        The SVD provides way to decompose matrix into singular vector and singular value.
+        
+        A = UD(V^T)
+        
+        where A => mxn matrix
+              U => mxm matrix, orthogonal matrix
+              D => mxn matrix, diagonal matrix
+              V => nxn matrix, orthogonal matrix
+              
+        The values along the diagonal D are called *singular values*.
+        The columns of U are called *left-singular vectors*.
+        The columns of V are called *right-singular vectors*.
+      
+## Numerical Computation
+   This deals with solving problems in a iterative process instead of analytically deriving a formula.
+   
+   
+
+## Probablity & Statistics
      + [Statistics explained with pictures](http://www.mathsisfun.com/data/index.html)
      + [Online lectures](http://www.ilectureonline.com/lectures/subject/MATH/18/164/1670)
      + Basics
