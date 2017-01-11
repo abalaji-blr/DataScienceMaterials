@@ -19,7 +19,9 @@
       + Matrices
       
       + Numerical Computation
-      
+   
+   * Information Theory
+   
 ## Linear Algebra 
   
   The following are the different mathematical objects: Scalar, Vector, Matrices and Tensor (array with more than two axes).
@@ -78,7 +80,13 @@
 ## Numerical Computation
    This deals with solving problems in a iterative process instead of analytically deriving a formula.
    
-   
+   1) Underflow: occurs when numbers are of near zero are getting rounded. Note that division by zero results in NaN (not a number)
+   2) Overflow : occurs when numbers are of larger magnitude. The arithmetic operation may result into Nan.
+   3) Softmax : this avoids both underflow and overflow problems.
+   4) Gradient based optimization:
+       The steepest descent converges when the gradient is zero (close to zero).
+   5) Jacobian Matrix: Contains the partial derivatives of both input and output.
+   6) Hessian Matrix: Contains the second order derivative.
 
 ## Probablity & Statistics
      + [Statistics explained with pictures](http://www.mathsisfun.com/data/index.html)
@@ -163,11 +171,51 @@ The different kinds of distributions are:
        d) Discriminant Function Analysis
        e) Canonical Correlation
 
+### Probability Distribution
+    Is a description of how likely a random variable or set of random variables is to take on each of its possible states. The values can be discrete or continuous.
+    
+#### Discrete variables and Probability Mass Function
+    The probability distribution over discrete varialbes are described using *Probability Mass Function*. 
+    Ex: 
+    1) P(x = x) 
+    2) P( x= x, y = y)   : This is probability joint distribution as multiple random variables are involved.
+    
+#### Continuous variables and Probability Density Function
+   The probability density function does not give the probability of a specific state directlly, instead it provides the probability of landing inside the region.
+   
+#### Marginal Probability
+   Let's say, we know the probaility distribution over a set of variables. But, when we want to know the probability distribution for a subset of variables, it is called as *Marginal Probability*.
+   
+#### Conditional Probability
+     This describes the probability of certain event given that some other event has happened. They are used to describe the dependent events.
+     
+#### Chain Rule (or Product Rule) of conditional probabilities.
+   Any join distribution over many random variables can be decomposed into conditional distribution over only one variable.
+   
+   Ex: P(a, b, c) = P(a | b,c). P(b,c)
+       P(b,c) = P(b | c) . P(c)
+       so, P(a,b,c) = P(a|b,c).P(b|c).P(c)
+
+#### Expectation, Variance and Covariance
+   The Expectation or expected value of some function f(x) with respect to a probability distribution P(x) is the average or mean value.
+   The Variance gives a measure of how much the value of the function of random variable vary as we sample different values from its probability distribution.
+   The *Covariance* gives some sense of how much the two values of two random variables are linearly related to each other.
+   
+#### Common Probabilty Distributions
+   1) Bernoulli Distribution : (aka) Binomial Distribution. (two states, 0 / 1, True / False)
+   2) Multinoulli Distribution : (aka) Multinomial Distribution ( k states)
+   3) Gaussian Distribution : Bell Curve, Normal Distribution
+   4) Exponential Distribution: To model sharp peak at x = 0.
+   
+#### Common Functions
+   1) Logistic Sigmoid = 1 / (1+ e(-x)) [ Models, Binomial distribution]
+   2) Softplus function = log( 1 + exp(x)) [ useful to mean & variance in Normal Distribution]
+   
 ### Probability & Statistics FAQs:
 
   * What is difference between Probablity & Statistics?
   
-     Probability:
+     Probability: is a mathematical framework to represent uncertainty.
      Statistics:
      
   * What is difference between *discrete and continuous* probability distribution?
@@ -176,12 +224,31 @@ The different kinds of distributions are:
     Continuous Distribution: Any value in the range.
 
  * What is the difference between *prior and posterior* in statistics?
- 
+   [ Refer to Bayesian statistics]
    *Prior*: is the probability distribution that represents the uncertainity over your interested variable before you have sampled any data and tried to predict it.
    
    *Posterior*: is the probability distribution that represents the uncertainity over the interested variables after sampling. It is a conditional distribution because it conditions of the sampled data.
    
+
+## Information Theory
+  Information theory is a branch of applied mathematics which revolves around the quantifying how much information is present in the signal.
+  
+  The basic intution behind Information theory for Machine Learning is that learning an unlikely event has occurred is more informative than the likely event has happened.
+  
+  The information is quantified in such a way that
+    a) Likely events will have less information content.
+    b) Less Likely events will have more information content.
+    c) Independent events should have additive information.
+    
+    The self-information is defined as I(x) = -log P(x), 
+    where I(x), self-information measured in *nats*.
+          P(x) is the probability of event x.
+          
+### KL Divergence
+   If we have two different probability distributions P(x) and Q(x) for the same random variable, we can measure how different these two distributions are using Kullback Liebler Divergence.
    
+### Cross Entropy
+   Cross Entropy is used as an error measure instead of squared error.
 ## Computer Science
   
      + [Interactive SQL Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial)
@@ -189,4 +256,3 @@ The different kinds of distributions are:
      + [SQL Joins](https://www.youtube.com/watch?v=KTvYHEntvn8)
         
      
-  
