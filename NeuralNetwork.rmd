@@ -162,12 +162,15 @@ The Reservoir computing is the extension to Neural Network. The ECN has a reserv
   * It is often called as associate memories.
   
 ## Boltzmann Machines (BM)
-
+  * It is not a standalone neural network. It is a building block.
+  * It is a engery based model.
   * It is a Hopfield network with binary stochastic units instead of binary threshold units.
   * It is also called as *Stochastic Hopfield Net*
   * Binary false is negative 1, (-1) and Binary True is positive 1 (+1).
   * The architecture is similar to Hopfield Net but it has 2 layers - "visible" and hidden.
+  * It is a generative model, which means, it can generate the data.
   * The "visible" layer act as input and output (reconstruction).
+  * The idea is to capture the input data (from visible units) in higher dimension at the hidden layer. Thus, the input can be reconstructed from the hidden states.
   * The learning process is difficult and time consuming (slow).
   
 ## Restricted Boltzmann Machines (RBM)
@@ -178,21 +181,28 @@ The Reservoir computing is the extension to Neural Network. The ECN has a reserv
   * No Connections among the hidden neurons.
   * That is the *restriction* in RBM when compared with BM.
   * In computer lingo, it is a bipartite graph.
+  * It is an energy based model. 
+  * The cost function involves Partition function in order to normalize the values (ie., get the probabilty between 0 to 1).
+  * The computation of Partition function is intractable. So, the joint probability distribution is also intractable.
+  * But, computing the conditional probability of hidden units given the visible is simple and we easy to sample from it.
+  * We can compute P(hidden|visible) and P(visible|hidden). Then how do we sample from the 
+    joint distribution - Gibbs Sampling.
+  * [Gibbs Sampling](http://www.umiacs.umd.edu/~resnik/pubs/gibbs.pdf)
+  * How do we model the *joint distribution*?
+    + Graphical models is one mechanism.
+    + By imposing certain constraints, we can answer any query related to those random variables.
+  * Contrastive Divergence (CD) : is a recipe for training undirected graphical models. It is an approximate Maximum Likelihood learning algorithm proposed by Geoffery Hinton.
+  [More details](http://www.robots.ox.ac.uk/~ojw/files/NotesOnCD.pdf)
   
   * [RBM video lecture - Ali Ghodsi](https://www.youtube.com/watch?v=FJ0z3Ubagt4)
   
   * Data Particle
   * Fantasy Particle
   
-  * Contrastive Divergence (CD) : is a recipe for training undirected graphical models. It is an approximate Maximum Likelihood learning algorithm proposed by Geoffery Hinton.
-  [More details](http://www.robots.ox.ac.uk/~ojw/files/NotesOnCD.pdf)
-    
   * Persistent Contrastive Divergence (PCD)
   * Fast Persistent Contrastive Divergence (FPCD)
   * Gibbs Chain
-  *
   
-  * Persistent Contrastive Divergence (PCD)
   
 ## Sigmoid Belief Network (SBN)
 
